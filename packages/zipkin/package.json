@@ -1,7 +1,7 @@
 {
-  "name": "zipkin",
-  "version": "0.19.1",
-  "description": "The core tracer for Zipkin JS",
+  "name": "@santiagodeveloper/zipkin-browser",
+  "version": "0.19.2",
+  "description": "The core tracer for Zipkin JS for browser",
   "main": "lib/index.js",
   "unpkg": "dist/zipkin.js",
   "module": "es/index.js",
@@ -13,11 +13,26 @@
     "test-browser": "tsc index.d.ts && karma start --single-run --browsers ChromeHeadless ../../karma.conf.js",
     "prepublish": "npm run build"
   },
-  "author": "OpenZipkin <openzipkin.alt@gmail.com>",
+  "author": "santiagodeveloper <santiagodeveloper666@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/openzipkin/zipkin-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openzipkin/zipkin-js.git"
+  },
   "dependencies": {
     "base64-js": "^1.1.2",
     "is-promise": "^2.1.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/openzipkin/zipkin-js/issues"
+  },
+  "homepage": "https://github.com/openzipkin/zipkin-js#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "zipkin",
+    "browser"
+  ]
 }

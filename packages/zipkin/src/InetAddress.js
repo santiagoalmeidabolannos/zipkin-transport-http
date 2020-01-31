@@ -32,14 +32,7 @@ class InetAddress {
 
 // In non-node environments we fallback to 127.0.0.1
 function getLocalAddress() {
-  const isNode = typeof process === 'object' && typeof process.on === 'function';
-  if (!isNode) {
-    return new InetAddress('127.0.0.1');
-  }
-
-  // eslint-disable-next-line global-require
-  const networkAddress = require('./network');
-  return new InetAddress(networkAddress.ipv4());
+  return new InetAddress('127.0.0.1');
 }
 
 // Cache this value at import time so as to avoid network interface
