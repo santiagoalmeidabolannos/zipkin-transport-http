@@ -1,6 +1,6 @@
 const {
   Instrumentation
-} = require('zipkin');
+} = require('@santiagodeveloper/zipkin-browser');
 
 function wrapFetch(fetch, {tracer, serviceName, remoteServiceName}) {
   const instrumentation = new Instrumentation.HttpClient({tracer, serviceName, remoteServiceName});

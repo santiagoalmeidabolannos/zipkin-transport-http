@@ -1,24 +1,38 @@
 {
-  "name": "zipkin-transport-http",
-  "version": "0.19.1",
+  "name": "@santiagodeveloper/zipkin-transport-http",
+  "version": "0.19.2",
   "description": "Transports Zipkin trace data via HTTP",
   "main": "lib/index.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "babel src -d lib",
     "test": "mocha --exit --require ../../test/helper.js",
-    "test-debug": "mocha --inspect-brk --exit --require ../../test/helper.js",
-    "prepublish": "npm run build"
+    "test-debug": "mocha --inspect-brk --exit --require ../../test/helper.js"
   },
-  "author": "Openzipkin <openzipkin.alt@gmail.com>",
+  "author": "Santiago <santiagodeveloper666@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/openzipkin/zipkin-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagoalmeidabolannos/zipkin-transport-http.git"
+  },
   "dependencies": {
-    "zipkin": "^0.19.1"
+    "@santiagodeveloper/zipkin-browser": "^0.19.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "body-parser": "^1.15.2",
     "node-fetch": "^2.3.0",
     "noop-logger": "^0.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/openzipkin/zipkin-js/issues"
+  },
+  "homepage": "https://github.com/openzipkin/zipkin-js#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "zipkin"
+  ]
 }

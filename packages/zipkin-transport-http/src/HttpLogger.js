@@ -5,7 +5,7 @@ const globalFetch = (typeof window !== 'undefined' && window.fetch)
 // eslint-disable-next-line global-require
 const fetch = globalFetch || require('node-fetch');
 
-const {jsonEncoder: {JSON_V1}} = require('zipkin');
+const {jsonEncoder: {JSON_V1}} = require('@santiagodeveloper/zipkin-browser');
 
 const {EventEmitter} = require('events');
 
